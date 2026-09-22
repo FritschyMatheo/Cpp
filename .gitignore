@@ -1,0 +1,27 @@
+# Fichiers objets et bibliothèques
+*.o
+*.obj
+*.lib
+*.a
+*.dylib
+*.so
+
+# Exécutables
+*.exe
+*.out
+*.app
+
+# Dossiers de build fréquents
+build/
+bin/
+obj/
+Debug/
+Release/
+
+# Fichiers spécifiques aux IDE (VS Code, Visual Studio, CLion)
+.vs/
+*.suo
+*.user
+.idea/
+CMakeCache.txt
+CMakeFiles/
