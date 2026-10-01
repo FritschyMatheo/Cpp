@@ -1,0 +1,1 @@
+// Pour tester, créer deux objets et tester toutes les opérations

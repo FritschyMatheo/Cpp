@@ -24,7 +24,7 @@ int main() {
         std::cout <<  "\n" << "Bonne temp";
     }
 
-    if(!pluie){
+    if(!pluie){ // = pluie != true
         std::cout <<  "\n" << "Il ne pleut pas";
     }
     else {
