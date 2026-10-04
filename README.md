@@ -1,6 +1,6 @@
 # Répertoire de cours de C++
 
 ```
-/TDs
+/TDs        <-- Répertoires de Tds
 /Tuto-6h
 ```
