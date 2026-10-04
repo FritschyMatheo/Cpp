@@ -12,13 +12,12 @@
 
 class Complex2D {
     private:
-        double re, im;
+        double _re, _im;
 
     public:
         Complex2D();
         Complex2D(double a, double b);
-        Complex2D(double a, double b);
-        //Complex2D(Complex2D&& valeur);
+        Complex2D(double ab);
         Complex2D(Complex2D &copie);
 };
 
