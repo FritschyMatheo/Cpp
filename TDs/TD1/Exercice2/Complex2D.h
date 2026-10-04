@@ -18,7 +18,7 @@ class Complex2D {
         Complex2D();
         Complex2D(double a, double b);
         Complex2D(double ab);
-        Complex2D(Complex2D &copie);
+        Complex2D(const Complex2D &copie);
 
         double getRe() const;
         double getIm() const;
@@ -26,7 +26,14 @@ class Complex2D {
         void setRe(double a);
         void setIm(double b);
 
-        
+        Complex2D operator+(const Complex2D &autre) const;
+        Complex2D operator-(const Complex2D &autre) const;
+        Complex2D operator*(const Complex2D &autre) const;
+        Complex2D operator/(const Complex2D &autre) const;
+        bool operator<(const Complex2D &autre) const;
+        bool operator>(const Complex2D &autre) const;
 };
+
+std::ostream& operator<<(std::ostream& os, const Complex2D& nombrec);
 
 #endif
