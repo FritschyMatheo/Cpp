@@ -19,6 +19,14 @@ class Complex2D {
         Complex2D(double a, double b);
         Complex2D(double ab);
         Complex2D(Complex2D &copie);
+
+        double getRe() const;
+        double getIm() const;
+
+        void setRe(double a);
+        void setIm(double b);
+
+        
 };
 
 #endif

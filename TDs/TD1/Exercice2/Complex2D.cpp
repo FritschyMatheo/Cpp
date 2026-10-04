@@ -28,3 +28,19 @@ Complex2D::Complex2D(Complex2D &copie) {
     _im = copie._im;
 }
 
+
+double Complex2D::getRe() const {
+    return _re;
+}
+
+double Complex2D::getIm() const {
+    return _im;
+}
+
+void Complex2D::setRe(double a) {
+    _re = a;
+}
+
+void Complex2D::setIm(double b) {
+    _im = b;
+}
