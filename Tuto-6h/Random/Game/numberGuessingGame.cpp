@@ -21,7 +21,7 @@ int main() {
             cout << "Plus grand\n";
         }
     } while(guess != randNum);
-    cout << "\nBien joue, tu as trouve le nombre" << randNum << "en " << tries << " essais !";
+    cout << "\nBien joue, tu as trouve le nombre " << randNum << " en " << tries << " essais !";
 
     return 0;
 }

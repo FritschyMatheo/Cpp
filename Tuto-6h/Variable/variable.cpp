@@ -1,6 +1,14 @@
 #include <iostream>
 
+int variableGlobale = 5; // Déclarée en dehors du main -> Globale et accessible par toutes les fonctions (moins sage)
+
 int main() {
+
+    int variableGlobale = 3;    // Même nom que la globale mais n'est pas globale
+
+    // Globale vs interne 
+    std::cout << variableGlobale << '\n';       // Utilise en priorité les pas globales
+    std::cout << ::variableGlobale << '\n';     // :: pour utiliser la globale
 
     // int
     int x;  // Declaration
