@@ -9,7 +9,7 @@ int main() {
     // Variable random
     int num;
     for(int i=0; i<=3; i++) {
-        num = (rand() % 6)+1; // Pour avoir entre 0 et 6 car les valeurs du rand peuvent être enormes
+        num = (rand() % 6)+1; // Pour avoir entre 1 et 6 car les valeurs du rand peuvent être enormes
         cout << num << '\n';
     }
 
