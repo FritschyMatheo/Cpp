@@ -16,13 +16,13 @@ class SearchingAlgorithm {
     protected:
         int numberComparisons;
         static int totalComparisons, totalSearch;
-        static double averageComparaisons;
+        static double averageComparisons;
     public:
         SearchingAlgorithm();
         virtual ~SearchingAlgorithm() = default;
 
-        virtual int search(std::vector<int>& vecteur, int recherche)=0;
-        void displaySearchResult(ostream& os, int result, int target);
+        virtual int search(const std::vector<int>& vecteur, int recherche)=0;
+        void displaySearchResults(std::ostream& os, int result, int target);
 };
 
 #endif

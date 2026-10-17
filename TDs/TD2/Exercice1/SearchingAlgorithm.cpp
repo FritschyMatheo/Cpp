@@ -3,11 +3,13 @@ using namespace std;
 
 SearchingAlgorithm::SearchingAlgorithm():numberComparisons(0) {}
 
-void SearchingAlgorithm::displaySearchResult(ostream& os, int result, int target) {
-    os << "Resultat : " << result << " Target : " << target;
+void SearchingAlgorithm::displaySearchResults(ostream& os, int result, int target) {
+    totalSearch++;
+    totalComparisons += numberComparisons;
+    averageComparisons = (double)totalComparisons / (double)totalSearch;
+    os << "Indice dans le vecteur : " << result << " Target : " << target << " Nombre de comparaisons : " << numberComparisons << " Moyenne : " << averageComparisons << "\n";
 }
 
-int totalComparisons = 0;
-int totalSearch = 0;
-double averageComparaisons = 0;
-
+int SearchingAlgorithm::totalComparisons = 0;
+int SearchingAlgorithm::totalSearch = 0;
+double SearchingAlgorithm::averageComparisons = 0;
