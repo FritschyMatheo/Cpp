@@ -7,7 +7,7 @@ void SearchingAlgorithm::displaySearchResults(ostream& os, int result, int targe
     totalSearch++;
     totalComparisons += numberComparisons;
     averageComparisons = (double)totalComparisons / (double)totalSearch;
-    os << "Indice dans le vecteur : " << result << " Target : " << target << " Nombre de comparaisons : " << numberComparisons << " Moyenne : " << averageComparisons << "\n";
+    os << "- Nombre recherche : " << target << " | Indice dans le vecteur : " << result << " | Nombre de comparaisons : " << numberComparisons << " | Moyenne : " << averageComparisons << "\n";
 }
 
 int SearchingAlgorithm::totalComparisons = 0;
