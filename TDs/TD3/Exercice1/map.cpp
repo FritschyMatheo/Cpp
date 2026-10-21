@@ -5,13 +5,33 @@
 using namespace std;
 
 void countFrequencyBruteForce(const vector<int>& numbers) {
-    
+    for(int i = 0; i < numbers.size(); i++) {
+        bool dejaFait = false;
+        for( int j=0; j<i; j++) {
+            if (numbers[j] == numbers[i]) {
+                dejaFait = true;
+                break;
+            }
+        }
+        if (dejaFait) continue;
+
+        int count = 0;
+        
+        for(int j = 0; j < numbers.size(); j++) {
+            if (numbers[j] == numbers[i]) {
+                count++;
+            }
+        } 
+        cout << endl << numbers[i] << " apparait " << count << " fois.";
+    }
 }
 
 map<int, int> countFrequencyOptimal( const vector<int>& numbers) {
-    
-
-    return ;
+    map<int, int> frequency;
+    for (int n : numbers) {
+        frequency[n]++;
+    }
+    return frequency;
 }
 
 int main() {
