@@ -48,5 +48,7 @@ int main() {
         cout << entry.first << ": " << entry.second << " times" << endl;
     }
 
+    // On voit que la méthode bruteforce a un cout plus élevé car elle a deux boucles imbriquées (O(n^2)) alors qu'avec la méthode optimal, c'est O(n log k) grâce aux map.
+
     return 0;
 }
