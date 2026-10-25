@@ -38,12 +38,12 @@ int main() {
     double dbl;
     cout << "\ndouble : " << sizeof(dbl) << endl;
 
-    // Compter les elements d'une liste grace a la taille du type :
-    float liste[] = {6, 5.2, 8.12, 3.14};
-    cout << sizeof(liste)/sizeof(float) << " elements\n";
+    // Compter les elements d'un tableau grace a la taille du type :
+    float tableau[] = {6, 5.2, 8.12, 3.14};
+    cout << sizeof(tableau)/sizeof(float) << " elements\n";
 
-    char liste2[] = {'a', 'U'};
-    cout << sizeof(liste2)/sizeof(char) << " elements";
+    char tableau2[] = {'a', 'U'};
+    cout << sizeof(tableau2)/sizeof(char) << " elements";
 
     return 0;
 }
