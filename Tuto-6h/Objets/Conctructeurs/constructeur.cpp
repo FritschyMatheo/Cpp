@@ -11,12 +11,22 @@ class Arme{
         int degats;
 
         // Constructeur, il a le nom de la classe
+        // Constructeur valué
         Arme(string nom_, string rarete_, int tailleChargeur_, int degats_) :
             nom(nom_),
             rarete(rarete_),
             tailleChargeur(tailleChargeur_),
             nbrBalles(tailleChargeur_),
             degats(degats_)
+        {};
+
+        // Constructeur par défaut
+        Arme() :
+            nom("Default"),
+            rarete("Default"),
+            tailleChargeur(0),
+            nbrBalles(tailleChargeur),
+            degats(0)
         {};
 
         /*
@@ -74,13 +84,16 @@ int main(){
     On fait juste appelle au constructeur avec les valeurs en argument :
     */
 
+    // Constructeur valué pour la scar et le rpg :
     Arme scar("Scar H", "Legendaire", 30, 35);
-
     scar.afficherStats();
 
     Arme rpg("Lance-roquettes", "Rare", 1, 110);
-
     rpg.afficherStats();
+
+    // Constructeur par défaut :
+    Arme parDefaut;
+    parDefaut.afficherStats();  // A donc les caracteristiques du constructeur par défaut
 
     return 0;
 }
