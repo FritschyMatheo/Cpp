@@ -2,6 +2,7 @@
 #include <ctime>
 using namespace std;
 
+bool choixMode();
 char choixCamp(char &pc);
 void drawGrid(char *boardValues);
 void move(char *boardValues, char player);
@@ -53,6 +54,25 @@ int main() {
     }
     cout << "\nFin de la partie, merci d'avoir joue !\n";
     return 0;
+}
+
+bool choixMode(){
+    char choix;
+    do {
+        cout << "\nChoisis le mode :     1 : Bot\n";
+        cout << "                      2 : 1v1\n";
+        cin >> choix;
+    } while ((choix != '1') & (choix != '2'));
+
+    if(choix == 1){
+        return false;
+    }
+    else if(choix == 2){
+        return true;
+    }
+    else{
+    return 0;
+    }
 }
 
 char choixCamp(char &pc){
