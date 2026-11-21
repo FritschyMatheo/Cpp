@@ -7,7 +7,7 @@ class Card {
         std::string cardName;
     public:
         Card(){};
-        Card(std::string cardName){};
+        Card(std::string cardName) : cardName(cardName) {}
         virtual ~Card() = default;
         virtual void displayInfo()=0;
 };
